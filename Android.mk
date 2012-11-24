@@ -91,7 +91,7 @@ else
 endif
 
 LOCAL_STATIC_LIBRARIES += librebootrecovery
-LOCAL_STATIC_LIBRARIES += libext4_utils libz
+LOCAL_STATIC_LIBRARIES += libext4_utils_static libz
 LOCAL_STATIC_LIBRARIES += libminzip libunz libmincrypt
 
 LOCAL_STATIC_LIBRARIES += libedify libbusybox libmkyaffs2image libunyaffs liberase_image libdump_image libflash_image
