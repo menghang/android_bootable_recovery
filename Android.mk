@@ -75,6 +75,7 @@ LOCAL_CFLAGS += -DBUILD_TOP="$(ANDROID_BUILD_TOP)"
 
 LOCAL_CFLAGS += -DUSE_EXT4
 LOCAL_C_INCLUDES += system/extras/ext4_utils
+LOCAL_STATIC_LIBRARIES += libext4_utils_static libz libsparse_static
 
 # This binary is in the recovery ramdisk, which is otherwise a copy of root.
 # It gets copied there in config/Makefile.  LOCAL_MODULE_TAGS suppresses
@@ -91,7 +92,7 @@ else
 endif
 
 LOCAL_STATIC_LIBRARIES += librebootrecovery
-LOCAL_STATIC_LIBRARIES += libext4_utils_static libz
+LOCAL_STATIC_LIBRARIES += libext4_utils_static libz libsparse_static
 LOCAL_STATIC_LIBRARIES += libminzip libunz libmincrypt
 
 LOCAL_STATIC_LIBRARIES += libedify libbusybox libmkyaffs2image libunyaffs liberase_image libdump_image libflash_image
